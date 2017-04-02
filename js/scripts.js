@@ -13,9 +13,30 @@
 // // Therefore we define a result variable and put in our add function we defined above and we choose alert to return the value.
 // var result = add(20,5);
 // alert(result);
+//
+//
+// var speak = function(saySomething) {
+//   alert(saySomething);
+// };
+//
+// var add = function(number1,number2){
+//   return number1 + number2;
+// };
+// //  var result passing two arguments 20,10 and calls the add() function.
+// var result = add(20,10);
+//
+// // the result variable now is 30.
+//
+// // This line concates 4 strings. and assings a new variable outputText. The variable is now assigned "the sum is 30."
+// var outputText = "The sum is"  + " " + result + ". ";
+//
+// // we call our speak function passing it the outputText variable which stands for "the sume is 30."
+// speak(outputText);
 
 
-var speak = function(saySomething) {
+// refactored above code. DRY coding is important.
+
+var speak = function (saySomething) {
   alert(saySomething);
 };
 
@@ -23,6 +44,6 @@ var add = function(number1,number2){
   return number1 + number2;
 };
 
-var result = add(20,10);
-var outputText = "The sum is"  + " " + result + ". ";
-speak(outputText);
+speak("the sum is " + add(20,10) + ". ");
+
+// raher then making a variable called result we pas the add function to our speak function and concate the strings inside
