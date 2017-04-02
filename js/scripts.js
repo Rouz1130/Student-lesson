@@ -35,15 +35,38 @@
 
 
 // refactored above code. DRY coding is important.
+//
+// var speak = function (saySomething) {
+//   alert(saySomething);
+// };
+//
+// var add = function(number1,number2){
+//   // The return keyword tells JavaScript to return the result from the line of code
+//   return number1 + number2;
+// };
+//
+// speak("the sum is " + add(20,10) + ". ");
+//
+// // raher then making a variable called result we pas the add function to our speak function and concate the strings inside
 
-var speak = function (saySomething) {
+// write a function with a prompt to enter name.
+// and return a greeting to them.
+var name = function(person) {
+  prompt(person);
+};
+
+prompt('enter your name ');
+
+var greeting = function (saySomething) {
   alert(saySomething);
 };
 
-var add = function(number1,number2){
-  return number1 + number2;
+alert("Hello how are you doing");
+
+// write a funciton to subtract two numbers
+var subtract = function(number1,number2){
+  return number1-number2;
 };
 
-speak("the sum is " + add(20,10) + ". ");
-
-// raher then making a variable called result we pas the add function to our speak function and concate the strings inside
+var result = subtract(40,10);
+alert(result);
