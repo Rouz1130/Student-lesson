@@ -70,3 +70,35 @@ var subtract = function(number1,number2){
 
 var result = subtract(40,10);
 alert(result);
+
+// multiply 2 numbers
+var multiply = function (number1,number2) {
+  return number1 * number2;
+};
+
+var result= multiply(5,5);
+alert(result);
+
+// multiply 3 numbers
+var threeTimes = function(number1,number2,number3) {
+  return number1 * number2 * number3;
+};
+
+var result = threeTimes(5,5,5);
+alert(result);
+
+// divide two numbers
+var divide = function (number1,number2) {
+  return number1/number2;
+};
+
+var result = divide(100,7);
+alert(result);
+
+// find remainder of divison
+var remainder = function (number1,number2){
+  return number1 % number2;
+};
+
+var result = remainder(100,7);
+alert(result);
